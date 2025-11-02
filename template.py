@@ -27,7 +27,7 @@ list_of_files = [
     "setup.py",
     "research/trials.ipynb",
     "templates/index.html",
-    "test.py"
+
 ]
 
 
@@ -42,10 +42,10 @@ for filepath in list_of_files :
     if (not os.path.exists(filepath)) or (os.path.getsize(filepath) == 0) :
         with open (filepath, "w") as f :
             pass
-        logging.info(f"created empty file : {filepath}")
+            logging.info(f"created empty file : {filepath}")
 
     else:
-        logging.info(f"file : {filepath} already exists")
+        logging.info(f"{filename} is already exists")
 
 
 
